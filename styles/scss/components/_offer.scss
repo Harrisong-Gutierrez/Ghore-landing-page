@@ -1,0 +1,245 @@
+.Offer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+    padding-top: 15px;
+
+    &-icon {
+        align-items: center;
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        width: 78px;
+
+        &-customized {
+            color: $blue-variant;
+            height: 25px;
+            width: 25px;
+        }
+    }
+
+    &-title {
+        display: flex;
+        font-family: $font-Inter-sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        gap: 4px;
+        height: 50.12px;
+        justify-content: center;
+        line-height: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 290.54px;
+
+        &-firstVariant {
+            color: $blue;
+        }
+
+        &-secondVariant {
+            color: $blue;
+        }
+
+        &-thirdVariant {
+            color: $pink-hard;
+        }
+    }
+
+    &-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 328px;
+    }
+
+    &-firstbox {
+        align-items: center;
+        background-color: $white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+
+        &-textOne {
+            align-items: center;
+            color: $dark-deep;
+            display: flex;
+            font-family: $font-Inter-sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            height: 40px;
+            justify-content: center;
+            line-height: 20px;
+            margin-bottom: 25px;
+            margin-left: 20.19px;
+            margin-top: 25px;
+            width: 86px;
+        }
+
+        &-textTwo {
+            align-items: center;
+            color: $dark-deep;
+            display: flex;
+            font-family: $font-Inter-sans-serif;
+            font-weight: 400;
+            height: 40px;
+            justify-content: center;
+            line-height: 20px;
+            margin-bottom: 25px;
+            margin-right: 19.28px;
+            margin-top: 25px;
+            text-align: center;
+            width: 123px;
+        }
+    }
+
+    &-secondBox {
+        align-items: center;
+        background-color: $white;
+        border-radius: 10px;
+        display: flex;
+
+        &-textOne {
+            font-family: $font-Inter-sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            height: 40px;
+            line-height: 20px;
+            margin-bottom: 26px;
+            margin-left: 29px;
+            margin-top: 26px;
+            text-align: center;
+            width: 90px;
+        }
+
+        &-plus {
+            align-items: center;
+            display: flex;
+            font-family: $font-Inter-sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            height: 16px;
+            justify-content: center;
+            margin-left: 24px;
+            margin-right: 21px;
+            text-align: center;
+            width: 19px;
+        }
+
+        &-textTwo {
+            font-family: $font-Inter-sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            height: 40px;
+            line-height: 20px;
+            margin-bottom: 26px;
+            margin-right: 29px;
+            margin-top: 26px;
+            text-align: center;
+            width: 116px;
+        }
+
+        &-firstSpan {
+            font-weight: 400;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        &-title {
+            font-size: 36px;
+            font-weight: 500;
+            height: 50px;
+            line-height: 38px;
+            margin-bottom: 67px;
+            width: 659px;
+        }
+
+        &-content {
+            height: auto;
+            margin-bottom: 121px;
+            margin-top: 90px;
+            width: 659px;
+        }
+
+        &-firstbox-textOne {
+            font-size: 50px;
+            font-weight: 700;
+            height: 20px;
+            line-height: 20px;
+            margin-bottom: auto;
+            margin-left: 62px;
+            margin-right: 19.5px;
+            margin-top: auto;
+            width: 134px;
+        }
+
+        &-firstbox-textTwo {
+            font-size: 20px;
+            height: 44px;
+            line-height: 22px;
+            margin-bottom: 42px;
+            margin-left: 19.5px;
+            margin-right: 61px;
+            margin-top: 42px;
+            width: 123px;
+        }
+
+        &-firstbox {
+            margin-bottom: 26px;
+        }
+
+        &-secondBox-textTwo {
+            font-size: 20px;
+            font-weight: 400;
+            height: 62px;
+            margin-bottom: 41px;
+            margin-right: 55px;
+            margin-top: 41px;
+            width: 170px;
+        }
+
+        &-secondBox-firstSpan {
+            font-weight: 700;
+        }
+
+        &-secondBox-secondSpan {
+            font-weight: 700;
+        }
+
+        &-secondBox-textOne {
+            font-size: 20px;
+            height: 62.61px;
+            line-height: 22px;
+            margin-bottom: 40.39px;
+            margin-left: 55px;
+            margin-top: 41px;
+            width: 140.87px;
+        }
+
+        &-secondBox-plus {
+            font-size: 20px;
+            height: 25.04px;
+            line-height: 22px;
+            margin-left: 38px;
+            margin-right: 18px;
+            width: 29.74px;
+        }
+
+        &-icon-customized {
+            height: 57px;
+            width: 41px;
+        }
+
+        &-icon {
+            height: 57px;
+            margin-bottom: 20px;
+            width: 41px;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .Offer {
+        padding: 0;
+    }
+}

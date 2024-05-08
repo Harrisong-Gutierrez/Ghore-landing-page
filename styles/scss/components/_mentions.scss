@@ -1,0 +1,94 @@
+.Mentions {
+    align-items: center;
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    &-content {
+        margin-top: 24px;
+        text-align: start;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    &-textOne {
+        color: $white;
+        font-family: $font-hk-grotesk-regular;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        width: 344px;
+        height: 80px;
+    }
+
+    &-button {
+        align-items: center;
+        background-color: $pink-hard;
+        border-radius: 6px;
+        color: $white;
+        display: flex;
+        flex-direction: row-reverse;
+        font-family: "HKGrotesk Bold";
+        height: 38px;
+        justify-content: center;
+        margin-bottom: 17px;
+        margin-top: 18px;
+        text-decoration: none;
+        width: 256px;
+    }
+
+    @include media-breakpoint-up(md) {
+        &-content {
+            max-width: 507px;
+        }
+    }
+
+
+    @include media-breakpoint-up(lg) {
+        &-button {
+            font-size: 20px;
+            height: 49.45px;
+            line-height: 22px;
+            margin-bottom: 84.12px;
+            margin-top: auto;
+            width: 357px;
+        }
+
+        &-textOne {
+            font-size: 12px;
+            height: 32px;
+            line-height: 16px;
+            margin-bottom: 42px;
+            width: 1009px;
+        }
+
+        &-content {
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.Selections-Mentions {
+    display: none;
+}
+
+@include media-breakpoint-up(lg) {
+    .Selections-Mentions {
+        display: flex;
+    }
+
+    .Footer-mentions {
+        display: none;
+    }
+
+    .Mentions {
+        background-color: $blue-sky;
+    }
+}
